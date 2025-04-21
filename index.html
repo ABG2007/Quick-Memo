@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Mémo</title>
+  <meta name="description" content="Application Quick Mémo minimaliste et moderne" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container glass-effect">
+    <div class="top-row">
+      <button class="theme-toggle-btn" aria-label="Basculer le mode sombre" title="Mode sombre/clair" type="button">
+        <span class="theme-icon-circle">
+          <span class="theme-icon" aria-hidden="true">
+            <!-- SVG injecté par JS -->
+          </span>
+        </span>
+      </button>
+      <div class="lang-row">
+        <label for="lang-select" class="lang-label">Langue</label>
+        <select id="lang-select" class="lang-select">
+          <option value="fr">🇫🇷 Français</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="es">🇪🇸 Español</option>
+          <option value="de">🇩🇪 Deutsch</option>
+          <option value="ar">🇩🇿 العربية</option>
+        </select>
+      </div>
+    </div>
+    <h1 class="app-title">
+  <span class="memo-icon" aria-label="Mémo" role="img">
+    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="12" y="14" width="38" height="35" rx="8" fill="#a3bffa"/>
+      <rect x="18" y="20" width="26" height="23" rx="5.5" fill="#fff"/>
+      <rect x="22" y="27" width="18" height="3.2" rx="1.6" fill="#a3bffa"/>
+      <rect x="22" y="34" width="11" height="3.2" rx="1.6" fill="#c3dafe"/>
+      <path d="M23 19l4-4 11 11-4 4" stroke="#7c8cf8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </span>
+  <span class="title-text">Quick Mémo</span>
+</h1>
+<div class="datetime-label-wrapper">
+  <span id="datetime-label" class="datetime-label"></span>
+</div>
+    <form class="memo-form" autocomplete="off">
+      <input class="memo-input" type="text" maxlength="120" placeholder="Écris ta note..." />
+      <button class="save-btn" type="submit">Enregistrer</button>
+    </form>
+    <ul class="memo-list"></ul>
+
+    <footer class="footer-signature">Quick Mémo by ABG</footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

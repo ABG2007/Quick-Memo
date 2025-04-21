@@ -1,0 +1,19 @@
+.history-btn {
+  margin: 1.1em auto 0 auto;
+  display: block;
+  background: #7c8cf8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7em 1.4em;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 8px #a3bffa22;
+  transition: background 0.18s, color 0.18s;
+}
+.history-btn:hover, .history-btn:focus {
+  background: #a3bffa;
+  color: #fff;
+}
